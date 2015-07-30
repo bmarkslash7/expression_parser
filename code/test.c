@@ -283,7 +283,7 @@ void test_user_functions_and_variables(){
 */
 int main( void ){
     
-    run_bad_input_tests();
+/*    run_bad_input_tests(); */
     
 	run_boolean_not_tests();
 	run_boolean_comparison_tests();

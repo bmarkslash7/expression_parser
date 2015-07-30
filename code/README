@@ -1,0 +1,19 @@
+gcc -c expression_parser.c -lm
+gcc -c testfromblog.c -lm
+gcc -c test.c -lm
+gcc -c example.c -lm
+gcc testfromblog.o expression_parser.o -o testfromblog -lm
+gcc test.o expression_parser.o -o test -lm
+gcc example.o expression_parser.o -o example -lm
+
+./testfromblog
+works without problems
+
+./test
+works successfully
+throws errors where errors are to occur 
+called the function run_bad_input_tests() twice, with and without mentioning that it should cause errors
+
+
+./example
+compiled and ran, although not sure where it should throw an error.
