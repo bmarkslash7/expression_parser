@@ -17,3 +17,8 @@ called the function run_bad_input_tests() twice, with and without mentioning tha
 
 ./example
 compiled and ran, although not sure where it should throw an error.
+
+
+gcc -c expression_parser.c -lm
+gcc -c chris-test.c -lm
+gcc chris-test.o expression_parser.o -o chris-test -lm
